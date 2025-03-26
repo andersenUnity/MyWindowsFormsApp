@@ -31,23 +31,7 @@ namespace MyWindowsFormsApp
                 MouseLeave += (sender, e) => _isMouseOnForm = false;
             }
 
-            private void ChangeLableColor(Label label)
-            {
-                if (_isMouseOnForm)
-                {
-                    if(label.ForeColor == Color.Green)
-                    {
-                        label.Text = "You could double click on this form!";
-                        label.ForeColor = Color.Black;
-                    }
-                    else
-                    {
-                        label.Text = "You could double click again";
-                        label.ForeColor = Color.Green;
-                    }
-                }
-            }
-
+           
             private void SetCommonParameters(Control element, Size size, Point position, string title)
             {
                 element.Size = size;
